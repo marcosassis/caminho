@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<title>caminho</title>
+<style>
+@font-face {
+    font-family: 'Source Code Pro';
+    src:
+        url('font/SourceCodePro-Regular.ttf.woff2') format('woff2'),
+        url('font/SourceCodePro-Regular.otf.woff') format('woff'),
+        url('font/SourceCodePro-Regular.otf') format('opentype'),
+        url('font/SourceCodePro-Regular.ttf') format('truetype');
+}
+html {
+    font-family: "Source Code Pro";
+    height: 100%;
+    display: grid;
+}
+body {
+    margin: auto;
+}
+#L {
+    text-align: center;
+}
+div {
+    height: 100vh;
+    margin: 10px;
+}
+</style>
+<div>
+<pre><code id=C></code></pre>
+<img id=I src="codigo.svg"/>
+<pre id=L>
+poema "código" de 1973, por Augusto de Campos
+</pre>
+</div>
+<script>
+fetch("codigo.svg")
+    .then(response => response.text())
+    .then((data) => {
+        C.innerText = data
+    })
+</script>
