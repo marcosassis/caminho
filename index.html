@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <meta charset="UTF-8">
 <title>caminho</title>
-<link rel="stylesheet" href="font/source-code-pro.css"/>
+<link rel="stylesheet" href="font/source-code-pro.css" />
 <style>
 * {
     margin: 0 auto;
@@ -13,23 +13,22 @@
 html {
     display: grid;
 }
-a {
-    text-align: center;
-}
 img {
     height: 78ch;
-    margin:  3ch;
+    margin: 3ch;
+}
+.string {
+    font-weight: 300;
 }
 </style>
 <pre><code id=C></code></pre>
 <img id=I src="codigo.svg" />
-<!-- <a href="codigo.svg">
-<img id=I src="codigo.svg" alt="poema 'código' de 1973, por Augusto de Campos" />
-</a> -->
 <script>
 fetch("codigo.svg")
     .then(response => response.text())
     .then((data) => {
-        C.innerText = data
+        C.innerHTML =
+            data.replace(/\</g, "&lt;")
+                .replace(/"([^"]*)"/g, `"<span class="string">$1</span>"`)
     })
 </script>
