@@ -4,31 +4,64 @@
 <title>caminho</title>
 <link rel="stylesheet" href="font/source-code-pro.css" />
 <style>
-* {
-    margin: 0 auto;
-    font-family: "Source Code Pro";
-    font-size: 10pt;
-    line-height: 15pt;
-}
-html {
-    display: grid;
-}
-img {
-    height: 78ch;
-    margin: 3ch;
-}
-.string {
-    font-weight: 300;
-}
+    * {
+        margin: 0 auto;
+        font-family: "Source Code Pro";
+        font-size: 10pt;
+        line-height: 15pt;
+    }
+
+    html {
+        display: grid;
+    }
+
+    img {
+        height: 78ch;
+        margin: 3ch;
+    }
+
+    .string {
+        font-weight: 300;
+    }
+
+    .deltas {
+        font-weight: 600;
+    }
+
+    .commands {
+        font-weight: 900;
+    }
+
+    .tags {
+        font-weight: 700;
+    }
+
+    .comments {
+        font-weight: 200;
+    }
 </style>
 <pre><code id=C></code></pre>
 <img id=I src="codigo.svg" />
 <script>
-fetch("codigo.svg")
-    .then(response => response.text())
-    .then((data) => {
-        C.innerHTML =
-            data.replace(/\</g, "&lt;")
-                .replace(/"([^"]*)"/g, `"<span class="string">$1</span>"`)
-    })
+    fetch("codigo.svg")
+        .then(response => response.text())
+        .then((data) => {
+            C.innerHTML =
+                data.replace(/\</g, "&lt;")
+                    .replace(/"(.*?)"/g, `"<span class="string">$1</span>"`)
+                    .replace(/ d="([^"]*)"/g, p1 => {
+                        commands = p1.split`\n`;
+                        for (i = 1; i < commands.length; ++i) {
+                            commands[i] =
+                                commands[i].slice(0, 24) +
+                                `<span class="commands">${commands[i].slice(24, 25)}</span>` +
+                                `<span class="string">${commands[i].slice(25, 42)}</span>` +
+                                `<span class="deltas">${commands[i].slice(42, 56)}</span>` +
+                                commands[i].slice(56);
+                        }
+                        return commands.join`\n`
+                    })
+                    .replace(/&lt;(\/|)(svg|circle|g|path)/g, `&lt;<span class=tags>$2</span>`)
+                    .replace(/&lt;!--([^-->]*)-->/g, `<span class="comments">$&</span>`);
+        });
 </script>
