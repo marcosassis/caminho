@@ -11,29 +11,28 @@
         url('font/SourceCodePro-Regular.otf') format('opentype'),
         url('font/SourceCodePro-Regular.ttf') format('truetype');
 }
-html {
+* {
+    margin: 0 auto;
     font-family: "Source Code Pro";
-    height: 100%;
+    font-size: 10pt;
+    line-height: 15pt;
+}
+html {
     display: grid;
 }
-body {
-    margin: auto;
-}
-#L {
+a {
     text-align: center;
 }
-div {
-    height: 100vh;
-    margin: 10px;
+img {
+    height: 78ch;
+    margin:  3ch;
 }
 </style>
-<div>
 <pre><code id=C></code></pre>
-<img id=I src="codigo.svg"/>
-<pre id=L>
-poema "código" de 1973, por Augusto de Campos
-</pre>
-</div>
+<img id=I src="codigo.svg" />
+<!-- <a href="codigo.svg">
+<img id=I src="codigo.svg" alt="poema 'código' de 1973, por Augusto de Campos" />
+</a> -->
 <script>
 fetch("codigo.svg")
     .then(response => response.text())
