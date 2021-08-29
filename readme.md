@@ -38,9 +38,9 @@
 
 - produz uma saída visual, no caso um tributo como agradecimento por tanto
 
-- ao mesmo tempo software ideia-ação uma busca de registro um
+- ao mesmo tempo software ideia-ação uma busca de registro
 
-- documento aberto a correções e derivações
+- aberto a correções e derivações
 
 - para reencontrá-lo, visite: https://marcosassis.github.io/caminho
 
