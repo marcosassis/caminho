@@ -20,7 +20,7 @@
 
 - extraia seu conteúdo e abra no editor de texto mais básico
 
-- leia com os olhos
+- leia
 
 - renomeie este de `codigo.txt` para `codigo.svg`
 
