@@ -1,3 +1,5 @@
+.
+
 # manual
 
     o ponto de chegada e partida é o poema "código" de augusto de campos
@@ -49,3 +51,34 @@
 - se o arquivo `.png` foi perdido ou alterado no envio, obtenha outra cópia: https://marcosassis.github.io/caminho/codigo.png
 
     <img src="https://marcosassis.github.io/caminho/codigo.png" width="72"> 
+
+.
+
+# sobre
+
+```
+               este trabalho é homenagem a
+                                                  autusto de campos
+também inspirado nos colegas de engenharia
+     e experimentação
+                                                erthos albino de souza
+                                                e. m. de melo e castro
+```
+
+.
+
+# ferramentas
+
+- linux
+- chrome e firefox
+    - nas versões para linux, android e windows
+- inskcape
+    - especialmente o editor svg e o conversor para png de linha de comando
+- gimp
+- imagemagick
+- git
+- github e github pages
+- vscode e extensão svg
+- python 3
+    - http.server: `python3 -m http.server 8888 --bind 0.0.0.0`
+    - tweetable-polyglot-png: https://github.com/DavidBuchanan314/tweetable-polyglot-png
