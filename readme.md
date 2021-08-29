@@ -36,9 +36,9 @@
 
 - aberto a correções e derivações
 
-- ao mesmo tempo software ideia-ação busca de registro
+- ao mesmo tempo software ideia-ação registro
 
-- para reencontrá-la, visite: https://marcosassis.github.io/caminho
+- para reencontrá-lo, visite: https://marcosassis.github.io/caminho
 
 ## a partir da página web
 
