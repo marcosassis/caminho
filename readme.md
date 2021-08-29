@@ -30,11 +30,9 @@
 
 - um jeito de abrir o `.svg` é arrastar até virar uma nova aba no navegador web
 
-- este documento de texto contem a fórmula da imagem
-
-- os parâmetros que a máquina executa à risca
-
 - os movimentos descritos nessa linguagem declarativa
+
+- parâmetros que a máquina executa à risca
 
 - produzem uma saída visual, no caso um tributo
 
