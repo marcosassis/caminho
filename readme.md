@@ -34,7 +34,7 @@
 
 - em tantas formas análoga a seu próprio código fonte
 
-- é software ideia-ação busca de registro aberta a correções e derivações
+- ao mesmo tempo software ideia-ação busca de registro aberta a correções e derivações
 
 - para reencontrá-la, visite: https://marcosassis.github.io/caminho
 
