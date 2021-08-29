@@ -8,7 +8,7 @@
 
 - abra a imagem em algum visualizador de imagens
 
-- vai ver na tela o poema "código" de 1973
+- veja na tela o poema "código" de 1973
 
 - vá aos limites do zoom e repare
 
