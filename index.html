@@ -73,7 +73,8 @@
     I.addEventListener("load", function () {
         var svgDoc = I.contentDocument;
         código = svgDoc.getElementById("código");
-        código.innerHTML = `<a href="codigo.svg" target="_blank" rel="noopener noreferrer">${código.innerHTML}</a>`
+        código.innerHTML =
+            `<a href="https://github.com/marcosassis/caminho" target="_blank" rel="noopener noreferrer">${código.innerHTML}</a>`
     }, false);
 
     fetch("codigo.svg")
@@ -95,7 +96,7 @@
                         return commands.join`\n`;
                     })
                     .replace(/&lt;(\/|)svg(>|)/g,
-                        `<a href="codigo.svg" target="_blank" rel="noopener noreferrer">$&</a>`)
+                        `<a href="https://github.com/marcosassis/caminho" target="_blank" rel="noopener noreferrer">$&</a>`)
                     .replace(/&lt;(\/|)(svg|circle|g|path)/g, `&lt;$1<span class=syntax-tag>$2</span>`)
                     .replace(/&lt;!--([^-->]*)-->/g, `<span class="syntax-comment">$&</span>`)
         });
