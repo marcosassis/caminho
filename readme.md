@@ -28,11 +28,13 @@
 
 - este arquivo `.svg` pode ser aberto em certos aplicativos de imagens
 
-- um jeito de abrir o `.svg` e os outros formatos é arrastar até virar uma nova aba no navegador web
+- um jeito de abrir o `.svg` e os outros é arrastar até virar uma nova aba no navegador web
 
-- este documento de texto contem os comandos que descrevem a forma da imagem, as fórmulas
+- este documento de texto contem a fórmula da imagem
 
-- algum programa interpreta o código, os movimentos descritos nessa linguagem declarativa
+- os parâmetros que a máquina executa à risca
+
+- representam os movimentos descritos nessa linguagem declarativa
 
 - produz uma saída visual, no caso um tributo como agradecimento por tanto
 
@@ -50,4 +52,4 @@
 
 - se o arquivo `.png` foi perdido ou alterado no envio, obtenha outra cópia: https://marcosassis.github.io/caminho/codigo.png
 
-    <img src="https://marcosassis.github.io/caminho/codigo.png" width="48"> 
+    <img src="https://marcosassis.github.io/caminho/codigo.png" width="72"> 
