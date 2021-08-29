@@ -1,6 +1,6 @@
-<svg viewBox="-13 -13 26 26" encoding="UTF-8" xmlns="http://www.w3.org/2000/svg" width="676" height="676" style="margin:auto; height:100%">
-    <circle cx="0" cy="0" r="13" fill="#000"/>
-    <g id="código" fill="#fff">
+<svg viewBox="-13 -13 26 26" encoding="UTF-8" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="0" cy="0" r="13" fill="#fff"/>
+    <g id="código" fill="#000">
         <!--               rx  ry   flags   dx     dy   -->
         <path id="c" d="
                         m                   0     -12
