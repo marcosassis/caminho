@@ -30,7 +30,7 @@
 
 - um jeito de renderizar o `.svg` é arrastar até virar uma nova aba no navegador web
 
-- ver esses movimentos pensados
+- para ver esses movimentos pensados
 
 - parâmetros que a máquina executa à risca resultam em uma saída visual
 
