@@ -30,15 +30,13 @@
 
 - um jeito de renderizar o `.svg` é arrastar até virar uma nova aba no navegador web
 
-- os movimentos descritos nessa linguagem declarativa são
+- ver esses movimentos pensados
 
-- os parâmetros que a máquina executa à risca
+- parâmetros que a máquina executa à risca
 
-- produzem uma saída visual, no caso um tributo
+- resultam em uma saída visual análoga em tantas formas a seu próprio código fonte
 
-- ao mesmo tempo software ideia-ação uma busca de registro
-
-- aberta a correções e derivações
+- é software ideia-ação busca de registro aberta a correções e derivações
 
 - para reencontrá-la, visite: https://marcosassis.github.io/caminho
 
