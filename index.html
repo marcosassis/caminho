@@ -14,14 +14,20 @@
     html {
         display: grid;
     }
-    img {
+    body {
+        margin-top: 1ex;
+    }
+    #P {
+        margin-left: 1ch;
+    }
+    #I {
         height: 78ch;
         margin: 3ch;
     }
     .syntax-command {
-        font-weight: 700;
+        font-weight: 600;
     }
-   .syntax-tag {
+    .syntax-tag {
         font-weight: 600;
     }
     .syntax-delta {
@@ -34,7 +40,7 @@
         font-weight: 200;
     }
 </style>
-<pre><code id=C></code></pre>
+<pre id=P><code id=C></code></pre>
 <img id=I src="codigo.svg" />
 <script>
     fetch("codigo.svg")
@@ -55,7 +61,7 @@
                         }
                         return commands.join`\n`
                     })
-                    .replace(/&lt;(\/|)(svg|circle|g|path)/g, `&lt;<span class=syntax-tag>$2</span>`)
+                    .replace(/&lt;(\/|)(svg|circle|g|path)/g, `&lt;$1<span class=syntax-tag>$2</span>`)
                     .replace(/&lt;!--([^-->]*)-->/g, `<span class="syntax-comment">$&</span>`);
         });
 </script>
