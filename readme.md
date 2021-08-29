@@ -8,7 +8,7 @@
 
 - abra a imagem em algum visualizador de imagens
 
-- na tela vai ver o poema "código" de 1973
+- vai ver na tela o poema "código" de 1973
 
 - vá aos limites do zoom e repare
 
@@ -28,25 +28,25 @@
 
 - este arquivo `.svg` pode ser aberto em certos aplicativos de imagens
 
-- um jeito de abrir o `.svg` e os outros é arrastar até virar uma nova aba no navegador web
+- um jeito de abrir o `.svg` é arrastar até virar uma nova aba no navegador web
 
 - este documento de texto contem a fórmula da imagem
 
 - os parâmetros que a máquina executa à risca
 
-- representam os movimentos descritos nessa linguagem declarativa
+- os movimentos descritos nessa linguagem declarativa
 
-- produz uma saída visual, no caso um tributo como agradecimento por tanto
+- produzem uma saída visual, no caso um tributo
 
 - ao mesmo tempo software ideia-ação uma busca de registro
 
-- aberto a correções e derivações
+- aberta a correções e derivações
 
-- para reencontrá-lo, visite: https://marcosassis.github.io/caminho
+- para reencontrá-la, visite: https://marcosassis.github.io/caminho
 
 ## a partir da página web
 
-- para voltar até aqui clique na tag `svg`
+- para voltar até aqui clique na tag `</svg>`
 
 - para informações e contribuições no desenvolvimento acesse: https://github.com/marcosassis/caminho
 
