@@ -30,8 +30,6 @@
 
 - um jeito de renderizar o `.svg` é arrastar até virar uma nova aba no navegador web
 
-- para ver esses movimentos pensados
-
 - parâmetros que a máquina executa à risca resultam em uma saída visual
 
 - em tantas formas análoga a seu próprio código fonte
