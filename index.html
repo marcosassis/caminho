@@ -2,27 +2,41 @@
 <html lang="pt-br">
 <meta charset="UTF-8">
 <title>caminho</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10">
+<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="font/source-code-pro.css" />
 <style>
     * {
         margin: 0 auto;
+        padding: 0;
         font-family: "Source Code Pro";
         font-size: 10pt;
         line-height: 15pt;
+        font-style: normal;
+        color: #000;
+        text-decoration: none !important;
+        /* border: 1px solid red; */
     }
     html {
         display: grid;
     }
+    ::selection {
+        background: #080808;
+    }
     body {
         margin-top: 1ex;
+        line-height: 0;
     }
     #P {
         margin-left: 1ch;
+        z-index: 1;
     }
     #I {
-        height: 78ch;
-        margin: 3ch;
+        height: 92.8vmin;
+        margin: calc(3.6vmin - 1.5em) 3.6vmin 3.6vmin 3.6vmin;
+    }
+    div {
+        text-align: center;
+        line-height: 0;
     }
     .syntax-command {
         font-weight: 600;
@@ -41,8 +55,14 @@
     }
 </style>
 <pre id=P><code id=C></code></pre>
-<img id=I src="codigo.svg" />
+<div><object id=I type="image/svg+xml" data="codigo.svg"></object></div>
 <script>
+    teste = 0;
+    I.addEventListener("load", function () {
+        var svgDoc = I.contentDocument;
+        código = svgDoc.getElementById("código");
+        código.innerHTML = `<a href="codigo.svg" target="_blank" rel="noopener noreferrer">${código.innerHTML}</a>`
+    }, false);
     fetch("codigo.svg")
         .then(response => response.text())
         .then((data) => {
@@ -59,9 +79,11 @@
                                 `<span class="syntax-delta">${commands[i].slice(42, 56)}</span>` +
                                 commands[i].slice(56);
                         }
-                        return commands.join`\n`
+                        return commands.join`\n`;
                     })
+                    .replace(/&lt;(\/|)svg(>|)/g, 
+                             `<a href="codigo.svg" target="_blank" rel="noopener noreferrer">$&</a>`)
                     .replace(/&lt;(\/|)(svg|circle|g|path)/g, `&lt;$1<span class=syntax-tag>$2</span>`)
-                    .replace(/&lt;!--([^-->]*)-->/g, `<span class="syntax-comment">$&</span>`);
+                    .replace(/&lt;!--([^-->]*)-->/g, `<span class="syntax-comment">$&</span>`)
         });
 </script>
