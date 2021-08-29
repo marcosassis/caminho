@@ -2,7 +2,6 @@
 <html lang="pt-br">
 <meta charset="UTF-8">
 <title>caminho</title>
-<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="font/source-code-pro.css" />
 <style>
     * {
@@ -18,25 +17,25 @@
     }
     html {
         display: grid;
+        align-items: center;
     }
     ::selection {
         background: #080808;
     }
     body {
-        margin-top: .5ex;
+        margin-top: 1pt;
         line-height: 0;
-    }
-    #P {
-        margin-left: 1ch;
-        z-index: 1;
     }
     #I {
         height: 92.8vmin;
-        margin: calc(3.6vmin - 1.5em - .5ex) 3.6vmin 3.6vmin 3.6vmin;
+        margin: calc(3.6vmin - 1.5em - 1pt) 3.6vmin 3.6vmin 3.6vmin;
     }
     div {
-        text-align: center;
         line-height: 0;
+        align-self: center;
+    }
+    pre {
+        width: 82ch;
     }
     .syntax-command {
         font-weight: 600;
@@ -54,10 +53,9 @@
         font-weight: 200;
     }
 </style>
-<pre id=P><code id=C></code></pre>
+<div><pre id=P><code id=C></code></pre></div>
 <div><object id=I type="image/svg+xml" data="codigo.svg"></object></div>
 <script>
-    teste = 0;
     I.addEventListener("load", function () {
         var svgDoc = I.contentDocument;
         código = svgDoc.getElementById("código");
