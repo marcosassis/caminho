@@ -32,11 +32,11 @@
 
 - parâmetros que a máquina executa à risca resultam em uma saída visual
 
-- em tantas formas análoga a seu próprio código fonte
-
-- aberto a correções e derivações
+- análoga a seu próprio código fonte
 
 - ao mesmo tempo software ideia-ação registro
+
+- aberto a correções e derivações
 
 - para reencontrá-lo, visite: https://marcosassis.github.io/caminho
 
