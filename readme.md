@@ -32,9 +32,9 @@
 
 - ver esses movimentos pensados
 
-- parâmetros que a máquina executa à risca
+- parâmetros que a máquina executa à risca resultam em uma saída visual
 
-- resultam em uma saída visual análoga em tantas formas a seu próprio código fonte
+- em tantas formas análoga a seu próprio código fonte
 
 - é software ideia-ação busca de registro aberta a correções e derivações
 
