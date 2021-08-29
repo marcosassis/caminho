@@ -22,17 +22,17 @@
 
 - leia
 
-- renomeie este de `codigo.txt` para `codigo.svg`
+- a linguagem descreve gráficos vetoriais escaláveis
 
-- estes são gráficos vetoriais escaláveis
+- renomeie este arquivo de `codigo.txt` para `codigo.svg`
 
-- este arquivo `.svg` pode ser aberto em certos aplicativos de imagens
+- este arquivo agora pode ser aberto em certos aplicativos de imagens
 
-- um jeito de abrir o `.svg` é arrastar até virar uma nova aba no navegador web
+- um jeito de renderizar o `.svg` é arrastar até virar uma nova aba no navegador web
 
-- os movimentos descritos nessa linguagem declarativa
+- os movimentos descritos nessa linguagem declarativa são
 
-- parâmetros que a máquina executa à risca
+- os parâmetros que a máquina executa à risca
 
 - produzem uma saída visual, no caso um tributo
 
