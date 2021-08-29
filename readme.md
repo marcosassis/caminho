@@ -24,7 +24,7 @@
 
 - a linguagem descreve gráficos vetoriais escaláveis
 
-- renomeie este arquivo de `codigo.txt` para `codigo.svg`
+- renomeie de `codigo.txt` para `codigo.svg`
 
 - este arquivo agora pode ser aberto em certos aplicativos de imagens
 
