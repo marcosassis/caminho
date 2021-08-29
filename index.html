@@ -23,7 +23,7 @@
         background: #080808;
     }
     body {
-        margin-top: 1ex;
+        margin-top: .5ex;
         line-height: 0;
     }
     #P {
@@ -32,7 +32,7 @@
     }
     #I {
         height: 92.8vmin;
-        margin: calc(3.6vmin - 1.5em) 3.6vmin 3.6vmin 3.6vmin;
+        margin: calc(3.6vmin - 1.5em - .5ex) 3.6vmin 3.6vmin 3.6vmin;
     }
     div {
         text-align: center;
@@ -81,8 +81,8 @@
                         }
                         return commands.join`\n`;
                     })
-                    .replace(/&lt;(\/|)svg(>|)/g, 
-                             `<a href="codigo.svg" target="_blank" rel="noopener noreferrer">$&</a>`)
+                    .replace(/&lt;(\/|)svg(>|)/g,
+                        `<a href="codigo.svg" target="_blank" rel="noopener noreferrer">$&</a>`)
                     .replace(/&lt;(\/|)(svg|circle|g|path)/g, `&lt;$1<span class=syntax-tag>$2</span>`)
                     .replace(/&lt;!--([^-->]*)-->/g, `<span class="syntax-comment">$&</span>`)
         });
