@@ -1,5 +1,3 @@
-.
-
 # manual
 
     o ponto de chegada e partida é o poema "código" de augusto de campos
@@ -50,10 +48,6 @@
 
 - se o arquivo `.png` foi perdido ou alterado no envio, obtenha outra cópia: https://marcosassis.github.io/caminho/codigo.png
 
-    <img src="https://marcosassis.github.io/caminho/codigo.png" width="72"> 
-
-.
-
 # sobre
 
 ```
@@ -64,8 +58,6 @@ também inspirado nos colegas de engenharia
                                                 erthos albino de souza
                                                 e. m. de melo e castro
 ```
-
-.
 
 # ferramentas
 
