@@ -96,7 +96,7 @@
                         return commands.join`\n`;
                     })
                     .replace(/&lt;(\/|)svg(>|)/g,
-                        `<a href="https://github.com/marcosassis/caminho">$&</a>`)
+                        `<a href="https://github.com/marcosassis/caminho#manual">$&</a>`)
                     .replace(/&lt;(\/|)(svg|circle|g|path)/g, `&lt;$1<span class=syntax-tag>$2</span>`)
                     .replace(/&lt;!--([^-->]*)-->/g, `<span class="syntax-comment">$&</span>`)
         });
