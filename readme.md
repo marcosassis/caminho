@@ -58,9 +58,9 @@
 
 ```
                este trabalho é homenagem a
-                                                  autusto de campos
+                                                autusto de campos
 também inspirado nos colegas de engenharia
-     e experimentação
+                          e experimentação
                                                 erthos albino de souza
                                                 e. m. de melo e castro
 ```
