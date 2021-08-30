@@ -11,15 +11,16 @@
 <script id=S type="text/javascript" src="formatter.js"></script>
 <script>
 
+fetch("codigo.svg")
+    .then(response => response.text())
+    .then((data) => C.innerHTML = adHocSyntaxHighlight_código(data));
+
 I.addEventListener("load", function () {
     var svgDoc = I.contentDocument;
     código = svgDoc.getElementById("código");
     código.innerHTML = linkWrap("", "codigo.svg", código.innerHTML);
 }, false);
-I.data = "codigo.svg";
 
-fetch("codigo.svg")
-    .then(response => response.text())
-    .then((data) => C.innerHTML = adHocSyntaxHighlight_código(data));
+I.data = "codigo.svg";
 
 </script>
