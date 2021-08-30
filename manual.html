@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<title>manual</title>
+<link rel="icon" href="codigo.svg">
+<meta name="viewport" content="width=device-width, initial-scale=.6, minimum-scale=0.1, maximum-scale=99">
+<link rel="stylesheet" href="font/source-code-pro.css" />
+<link rel="stylesheet" href="style.css" />
+<div><pre id=M></pre></div>
+<script id=S type="text/javascript" src="formatter.js"></script>
+<script>
+
+fetch("readme.md")
+    .then(response => response.text())
+    .then((data) => M.innerHTML = data);
+
+</script>

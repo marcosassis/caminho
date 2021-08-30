@@ -1,5 +1,3 @@
-window.onload = _ => console.log("okokokok");
-
 function tagWrap(_tag, _class, _attributes, _content) {
     return `<${_tag}${_class ? ` class="${_class}"` : ""} ${_attributes}>${_content}</${_tag}>`;
 }
@@ -26,7 +24,7 @@ function adHocSyntaxHighlight_código(text) {
             return commands.join`\n`;
         })
         .replace(/&lt;(\/|)svg(>|)/g,
-            linkWrap("", "https://github.com/marcosassis/caminho#manual", "$&"))
+            linkWrap("", "manual.html", "$&"))
         .replace(/&lt;(\/|)(svg|circle|g|path)/g, `&lt;$1` + tagWrap("span", "syntax-tag", "", "$2"))
         .replace(/&lt;!--([^-->]*)-->/g, tagWrap("span", "syntax-comment", "", "$&"));
 }
