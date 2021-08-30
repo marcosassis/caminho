@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="font/source-code-pro.css" />
 <link rel="stylesheet" href="style.css" />
 <div><pre id=P><code id=C></code></pre></div>
-<div><object id=I type="image/svg+xml" data="codigo.svg"></object></div>
+<div><object id=I type="image/svg+xml"></object></div>
 <script id=S type="text/javascript" src="formatter.js"></script>
 <script>
 
@@ -16,6 +16,7 @@ I.addEventListener("load", function () {
     código = svgDoc.getElementById("código");
     código.innerHTML = linkWrap("", "codigo.svg", código.innerHTML);
 }, false);
+I.data = "codigo.svg";
 
 fetch("codigo.svg")
     .then(response => response.text())
