@@ -12,6 +12,6 @@
 
 fetch("readme.md")
     .then(response => response.text())
-    .then((data) => M.innerHTML = data);
+    .then((data) => M.innerHTML = autoLink(data));
 
 </script>

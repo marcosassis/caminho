@@ -52,3 +52,7 @@ div {
 .syntax-comment {
     font-weight: 200;
 }
+
+#M {
+    margin: 4.5em auto;
+}
