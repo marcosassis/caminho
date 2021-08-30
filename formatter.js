@@ -7,6 +7,10 @@ function linkWrap(_class, _href, _content, newTab = true) {
         `href="${_href}" ${newTab ? `target="_blank" rel="noopener noreferrer"` : ""}`, _content);
 }
 
+function autoLink(text, _class = "", newTab = true) {
+    return text.replace(/https:\/\/.+/g, linkWrap(_class, "$&", "$&", newTab));
+}
+
 function adHocSyntaxHighlight_código(text) {
     return text
         .replace(/\</g, "&lt;")
