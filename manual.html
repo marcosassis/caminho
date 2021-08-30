@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <meta charset="UTF-8">
 <title>manual</title>
-<meta name="viewport" content="width=device-width, initial-scale=.6, minimum-scale=0.1, maximum-scale=99">
+<meta name="viewport" content="width=device-width, initial-scale=.55">
 <link rel="stylesheet" href="font/source-code-pro.css" />
 <link rel="stylesheet" href="style.css" />
 <link rel="icon" href="svg/codigo-fundo-redondo.svg">
@@ -12,6 +12,7 @@
 
 fetch("readme.md")
     .then(response => response.text())
-    .then((data) => M.innerHTML = autoLink(data));
+    .then((data) => M.innerHTML =
+        autoLink(data.replace(/\</g, "&lt;"), "", `style="text-transform:lowercase"`));
 
 </script>

@@ -15,7 +15,7 @@ body {
     display: grid;
 }
 
-::selection {
+::selection, a:hover {
     background: #080808;
 }
 
@@ -54,5 +54,7 @@ div {
 }
 
 #M {
-    margin: 4.5em auto;
+    /* margin: 4.5em auto; */
+    line-height: 20pt;
+    font-weight: 500;
 }

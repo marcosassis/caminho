@@ -2,13 +2,14 @@ function tagWrap(_tag, _class, _attributes, _content) {
     return `<${_tag}${_class ? ` class="${_class}"` : ""} ${_attributes}>${_content}</${_tag}>`;
 }
 
-function linkWrap(_class, _href, _content, newTab = true) {
+function linkWrap(_class, _href, _content, otherAttributes="", newTab = true) {
     return tagWrap("a", _class,
-        `href="${_href}" ${newTab ? `target="_blank" rel="noopener noreferrer"` : ""}`, _content);
+        `href="${_href}" ${newTab ? `target="_blank" rel="noopener noreferrer" ${otherAttributes}` : ""}`,
+         _content);
 }
 
-function autoLink(text, _class = "", newTab = true) {
-    return text.replace(/https:\/\/.+/g, linkWrap(_class, "$&", "$&", newTab));
+function autoLink(text, _class = "", otherAttributes="", newTab = true) {
+    return text.replace(/https:\/\/.+/g, linkWrap(_class, "$&", "$&", otherAttributes, newTab));
 }
 
 function adHocSyntaxHighlight_código(text) {
