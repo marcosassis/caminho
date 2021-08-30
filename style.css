@@ -1,0 +1,57 @@
+* {
+    margin: 0 auto;
+    font-family: "Source Code Pro";
+    font-size: 10pt;
+    line-height: 15pt;
+    font-style: normal;
+    color: #000;
+    text-decoration: none !important;
+    /* border: 1px solid red; */
+}
+
+body {
+    display: grid;
+}
+
+::selection {
+    background: #080808;
+}
+
+body {
+    margin-top: 1pt;
+    line-height: 0;
+}
+
+#I {
+    height: 92.8vmin;
+    margin: calc(3.6vmin - 1.5em - 1pt) 3.6vmin 3.6vmin 3.6vmin;
+}
+
+#P {
+    width: 82ch;
+}
+
+div {
+    line-height: 0;
+    align-self: center;
+}
+
+.syntax-command {
+    font-weight: 600;
+}
+
+.syntax-tag {
+    font-weight: 600;
+}
+
+.syntax-delta {
+    font-weight: 500;
+}
+
+.syntax-string {
+    font-weight: 300;
+}
+
+.syntax-comment {
+    font-weight: 200;
+}

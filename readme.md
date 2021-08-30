@@ -1,6 +1,8 @@
 # manual
 
-    o ponto de chegada e partida é o poema "código" de augusto de campos
+```
+o ponto de chegada e partida é o poema "código" de augusto de campos
+```
 
 ## a partir do `.png`
 

@@ -5,99 +5,20 @@
 <link rel="icon" href="codigo-alvo.svg">
 <meta name="viewport" content="width=device-width, initial-scale=.6, minimum-scale=0.1, maximum-scale=99">
 <link rel="stylesheet" href="font/source-code-pro.css" />
-<style>
-    * {
-        margin: 0 auto;
-        /* padding: 0; */
-        font-family: "Source Code Pro";
-        font-size: 10pt;
-        line-height: 15pt;
-        font-style: normal;
-        color: #000;
-        text-decoration: none !important;
-        /* border: 1px solid red; */
-    }
-
-    body {
-        display: grid;
-        /* flex-direction: column; */
-        /* align-items: center; */
-    }
-
-    ::selection {
-        background: #080808;
-    }
-
-    body {
-        margin-top: 1pt;
-        line-height: 0;
-    }
-
-    #I {
-        height: 92.8vmin;
-        margin: calc(3.6vmin - 1.5em - 1pt) 3.6vmin 3.6vmin 3.6vmin;
-    }
-
-    div {
-        line-height: 0;
-        align-self: center;
-    }
-
-    pre {
-        width: 82ch;
-    }
-
-    .syntax-command {
-        font-weight: 600;
-    }
-
-    .syntax-tag {
-        font-weight: 600;
-    }
-
-    .syntax-delta {
-        font-weight: 500;
-    }
-
-    .syntax-string {
-        font-weight: 300;
-    }
-
-    .syntax-comment {
-        font-weight: 200;
-    }
-</style>
+<link rel="stylesheet" href="style.css" />
 <div><pre id=P><code id=C></code></pre></div>
 <div><object id=I type="image/svg+xml" data="codigo.svg"></object></div>
+<script id=S type="text/javascript" src="formatter.js"></script>
 <script>
-    I.addEventListener("load", function () {
-        var svgDoc = I.contentDocument;
-        código = svgDoc.getElementById("código");
-        código.innerHTML =
-            `<a href="codigo.svg" target="_blank" rel="noopener noreferrer">${código.innerHTML}</a>`
-    }, false);
 
-    fetch("codigo.svg")
-        .then(response => response.text())
-        .then((data) => {
-            C.innerHTML =
-                data.replace(/\</g, "&lt;")
-                    .replace(/"(.*?)"/g, `"<span class="syntax-string">$1</span>"`)
-                    .replace(/ d="([^"]*)"/g, p1 => {
-                        commands = p1.split`\n`;
-                        for (i = 1; i < commands.length; ++i) {
-                            commands[i] =
-                                commands[i].slice(0, 24) +
-                                `<span class="syntax-command">${commands[i].slice(24, 25)}</span>` +
-                                `<span class="syntax-string">${commands[i].slice(25, 42)}</span>` +
-                                `<span class="syntax-delta">${commands[i].slice(42, 56)}</span>` +
-                                commands[i].slice(56);
-                        }
-                        return commands.join`\n`;
-                    })
-                    .replace(/&lt;(\/|)svg(>|)/g,
-                        `<a href="https://github.com/marcosassis/caminho#manual" target="_blank" rel="noopener noreferrer">$&</a>`)
-                    .replace(/&lt;(\/|)(svg|circle|g|path)/g, `&lt;$1<span class=syntax-tag>$2</span>`)
-                    .replace(/&lt;!--([^-->]*)-->/g, `<span class="syntax-comment">$&</span>`)
-        });
+I.addEventListener("load", function () {
+    var svgDoc = I.contentDocument;
+    código = svgDoc.getElementById("código");
+    código.innerHTML = linkWrap("", "codigo.svg", código.innerHTML);
+}, false);
+
+fetch("codigo.svg")
+    .then(response => response.text())
+    .then((data) => C.innerHTML = adHocSyntaxHighlight_código(data));
+
 </script>
