@@ -6,7 +6,7 @@
 
 ## a partir do `.png`
 
-- salve o arquivo `codigo.png` em algum diretório no seu computador
+- salve o arquivo `codigo.png` em um diretório no seu computador
 
 - abra a imagem em algum visualizador de imagens
 
@@ -32,9 +32,9 @@
 
 - um jeito de renderizar o `.svg` é arrastar até virar uma nova aba no navegador web
 
-- parâmetros que a máquina executa à risca resultam em uma saída visual
+- esses parâmetros são movimentos que a máquina executa à risca
 
-- análoga a seu próprio código fonte
+- resultam em uma saída visual análoga a seu próprio código fonte
 
 - ao mesmo tempo software ideia-ação registro
 
