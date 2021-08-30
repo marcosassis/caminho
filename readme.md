@@ -70,6 +70,7 @@ também inspirado nos colegas de engenharia
 # ferramentas
 
 - linux
+- ubuntu e pacotes ppa
 - chrome e firefox
     - nas versões para linux, android e windows
 - inskcape
@@ -80,5 +81,5 @@ também inspirado nos colegas de engenharia
 - github e github pages
 - vscode e extensão svg
 - python 3
-    - http.server: `python3 -m http.server 8888 --bind 0.0.0.0`
-    - tweetable-polyglot-png: https://github.com/DavidBuchanan314/tweetable-polyglot-png
+    - pacote http.server para testes em rede local: `python3 -m http.server 8888 --bind 0.0.0.0`
+    - para empacotar o arquivo poliglota png-zip: https://github.com/DavidBuchanan314/tweetable-polyglot-png
