@@ -71,7 +71,7 @@
 
   - para informações e contribuições no desenvolvimento: https://github.com/marcosassis/caminho
 
-  - se o arquivo `.png` foi perdido ou alterado no envio, obtenha outra cópia: https://marcosassis.github.io/caminho/codigo.png
+  - se o arquivo `.png` foi perdido ou alterado no envio, obtenha uma cópia: https://marcosassis.github.io/caminho/codigo.png
 
 
 
