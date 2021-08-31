@@ -21,7 +21,7 @@
 
 
 ㅤ
- ##  a partir do `.png`
+##  a partir do `.png`
 
 
 
@@ -63,7 +63,7 @@
 
 
 ㅤ
- ##  a partir da página web
+##  a partir da página web
 
 
 
@@ -105,7 +105,7 @@
 
 
 ㅤ
- ##  ferramentas
+##  ferramentas
 
 
 
