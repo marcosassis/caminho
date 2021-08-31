@@ -1,3 +1,4 @@
 font/* linguist-vendored
 jornada/* linguist-vendored
 png/* linguist-vendored
+*.svg linguist-language=SVG
