@@ -1,17 +1,18 @@
+:root {
+    font-size: 14px;
+}
+
 * {
     margin: 0 auto;
+    padding: 0;
     font-family: "Source Code Pro";
-    font-size: 10pt;
-    line-height: 15pt;
     font-style: normal;
     color: #000;
     text-decoration: none !important;
-    /* border: 1px solid red; */
+    /* outline: 1px dashed red; */
 }
 
 body {
-    margin-top: 1pt;
-    line-height: 0;
     display: grid;
 }
 
@@ -21,16 +22,16 @@ body {
 
 #I {
     height: 92.8vmin;
-    margin: calc(3.6vmin - 1.5em - 1pt) 3.6vmin 3.6vmin 3.6vmin;
+    margin: calc(3.6vmin - 1.75rem) 3.6vmin 3.6vmin 3.6vmin;
 }
 
-#P {
+#C {
+    line-height: 1.5rem;
     width: 82ch;
 }
 
-div {
-    line-height: 0;
-    align-self: center;
+#M {
+    line-height: 2rem;
 }
 
 .syntax-command {
@@ -51,10 +52,4 @@ div {
 
 .syntax-comment {
     font-weight: 200;
-}
-
-#M {
-    /* margin: 4.5em auto; */
-    line-height: 20pt;
-    font-weight: 500;
 }

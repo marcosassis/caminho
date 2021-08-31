@@ -9,7 +9,7 @@ function linkWrap(_class, _href, _content, otherAttributes="", newTab = true) {
 }
 
 function autoLink(text, _class = "", otherAttributes="", newTab = true) {
-    return text.replace(/https:\/\/.+/g, linkWrap(_class, "$&", "$&", otherAttributes, newTab));
+    return text.replace(/https:\/\/(.+)/g, linkWrap(_class, "$&", "$1", otherAttributes, newTab));
 }
 
 function adHocSyntaxHighlight_código(text) {

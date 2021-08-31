@@ -2,12 +2,13 @@
 <html lang="pt-br">
 <meta charset="UTF-8">
 <title>caminho</title>
-<meta name="viewport" content="width=device-width, initial-scale=.55">
+<meta name="viewport" content="width=device-width, initial-scale=.52">
 <link rel="stylesheet" href="font/source-code-pro.css" />
 <link rel="stylesheet" href="style.css" />
 <link rel="icon" href="svg/codigo-fundo-branco.svg">
+<div><pre id=C></pre></div>
 <div><object id=I type="image/svg+xml"></object></div>
-<script id=S type="text/javascript" src="formatter.js"></script>
+<script type="text/javascript" src="formatter.js"></script>
 <script>
 
 fetch("codigo.svg")
@@ -21,5 +22,10 @@ I.addEventListener("load", function () {
 }, false);
 
 I.data = "codigo.svg";
+
+if (navigator.appVersion.indexOf("Chrome/") != -1) {
+    C.style.paddingTop = "1px";
+    C.style.marginBottom = "-1px";
+} // wich css reset am I missing?
 
 </script>
