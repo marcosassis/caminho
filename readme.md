@@ -11,7 +11,7 @@
 
 
 
-    o ponto de chegada partida é o poema "código" de augusto de campos
+    o ponto de chegadapartida é o poema "código" de augusto de campos
 
 
 
