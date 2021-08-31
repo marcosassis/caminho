@@ -61,3 +61,7 @@ body {
 .syntax-code {
     font-weight: 500;
 }
+
+.syntax-string::selection, .syntax-command::selection, .syntax-delta::selection {
+    color: #fff;
+}
