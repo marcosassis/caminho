@@ -7,7 +7,7 @@
 
 
 ㅤ
-  #  manual
+ #  manual
 
 
 
@@ -81,7 +81,7 @@
 
 
 ㅤ
-  #  sobre
+#  sobre
 
 
 
