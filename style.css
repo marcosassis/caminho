@@ -53,3 +53,11 @@ body {
 .syntax-comment {
     font-weight: 200;
 }
+
+.syntax-title {
+  font-weight: 700;
+}
+
+.syntax-code {
+    font-weight: 500;
+}

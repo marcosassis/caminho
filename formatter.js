@@ -2,13 +2,13 @@ function tagWrap(_tag, _class, _attributes, _content) {
     return `<${_tag}${_class ? ` class="${_class}"` : ""} ${_attributes}>${_content}</${_tag}>`;
 }
 
-function linkWrap(_class, _href, _content, otherAttributes="", newTab = true) {
+function linkWrap(_class, _href, _content, otherAttributes = "", newTab = true) {
     return tagWrap("a", _class,
         `href="${_href}" ${newTab ? `target="_blank" rel="noopener noreferrer" ${otherAttributes}` : ""}`,
-         _content);
+        _content);
 }
 
-function autoLink(text, _class = "", otherAttributes="", newTab = true) {
+function autoLink(text, _class = "", otherAttributes = "", newTab = true) {
     return text.replace(/https:\/\/(.+)/g, linkWrap(_class, "$&", "$1", otherAttributes, newTab));
 }
 
@@ -32,4 +32,10 @@ function adHocSyntaxHighlight_código(text) {
             linkWrap("", "manual.html", "$&"))
         .replace(/&lt;(\/|)(svg|circle|g|path)/g, `&lt;$1` + tagWrap("span", "syntax-tag", "", "$2"))
         .replace(/&lt;!--([^-->]*)-->/g, tagWrap("span", "syntax-comment", "", "$&"));
+}
+
+function adHocSyntaxHighlight_manual(text) {
+    return autoLink(text.replace(/\</g, "&lt;"), "syntax-code", `style="text-transform:lowercase"`)
+        .replace(/`([^`]*)`/g, tagWrap("span", "syntax-code", "", "$&"))
+        .replace(/.#  .+/g, tagWrap("span", "syntax-title", "", "$&"))
 }
