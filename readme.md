@@ -87,7 +87,7 @@
 
                    este trabalho é homenagem a
 
-                                                  autusto de campos
+                                                  augusto de campos
 
     também inspirado nos colegas de engenharia
 
