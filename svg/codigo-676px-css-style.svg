@@ -1,4 +1,5 @@
-<svg viewBox="-13 -13 26 26" encoding="UTF-8" xmlns="http://www.w3.org/2000/svg" width="676" height="676" style="margin:auto; height:100%">
+<svg viewBox="-13 -13 26 26" encoding="UTF-8" xmlns="http://www.w3.org/2000/svg" width="676" height="676"
+    style="margin:auto; min-height:100vmin; display:grid;">
     <circle cx="0" cy="0" r="13" fill="#000"/>
     <g id="código" fill="#fff">
         <!--               rx  ry   flags   dx     dy   -->
